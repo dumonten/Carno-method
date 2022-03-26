@@ -1,0 +1,16 @@
+program dkd;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+var
+    n, i : Cardinal;
+begin
+    i := 0;
+    while (n <> 0) do begin
+
+        n := n shr 1;
+    end;
+end.
+ 
