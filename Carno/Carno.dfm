@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = -107
-  Top = 149
-  Width = 1328
-  Height = 839
+  Left = -6
+  Top = 387
+  Width = 1358
+  Height = 452
   Caption = 'Form'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -10,15 +10,15 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = False
+  OldCreateOrder = True
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object MapTable: TStringGrid
+  object maptable: TStringGrid
     Left = 576
     Top = 64
     Width = 577
-    Height = 481
+    Height = 425
     ColCount = 3
     DefaultColWidth = 30
     RowCount = 3
@@ -30,8 +30,8 @@ object Form1: TForm1
       24)
   end
   object TTable: TStringGrid
-    Left = 216
-    Top = 64
+    Left = 208
+    Top = 56
     Width = 305
     Height = 513
     ColCount = 3

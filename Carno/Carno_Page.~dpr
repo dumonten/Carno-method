@@ -5,7 +5,7 @@ uses
   Carno in 'Carno.pas' {Form1},
   Map in 'Map.pas',
   Terms in 'Terms.pas',
-  TermFunctions in 'TermFunctions.pas',
+  Func in 'Func.pas',
   ATable in 'ATable.pas';
 
 {$R *.res}

@@ -40,7 +40,7 @@
             carno.form1.maptable.rowcount :=  1 shl (nbits div 2) + 1;
             carno.form1.maptable.colcount := (1 shl nbits) div (carno.form1.maptable.rowcount - 1) + 1;
 
-            carno.form1.maptable.colwidths [0] := 8*(nbits + 1);
+            carno.form1.maptable.colwidths [0] := 10*(nbits + 1);
 
             carno.form1.maptable.cells [0,0] := col + '/' + row;
 
@@ -57,7 +57,6 @@
             carno.form1.row_name.height  := rect.bottom - carno.form1.row_name.top + 1;
             carno.form1.row_name.visible := true;
             carno.form1.row_name.setfocus;}
-
 
             graycol := graycode (nbits div 2);
             grayrow := graycode (nbits - nbits div 2);
