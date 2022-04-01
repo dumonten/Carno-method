@@ -59,7 +59,7 @@ type
         ttable.cells[0,0] := 'Минтермы';
         if (varcount.itemindex = 0) then n := random (7) + 2
           else n := varcount.itemindex + 1;
-        {!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}
+
         trm.Set_nBits(n);
         ttable.rowcount := round (exp(ln(2)*n)) + 1;
         ttable.cells[1,0] := 'A  B ';
@@ -124,9 +124,6 @@ type
         end;
         cm1 := cmap.create(a[1], a[2]);
         p   := pat.create (a[1], a[2]);
-
-
-
       end;
 end.
 

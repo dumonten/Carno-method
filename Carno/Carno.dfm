@@ -1,18 +1,16 @@
 object Form1: TForm1
   Left = -6
   Top = 387
-  Width = 1358
-  Height = 452
   Caption = 'Form'
+  ClientHeight = 597
+  ClientWidth = 1340
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = True
   OnCreate = FormCreate
-  PixelsPerInch = 96
   TextHeight = 13
   object maptable: TStringGrid
     Left = 576
@@ -74,7 +72,6 @@ object Form1: TForm1
     Width = 65
     Height = 21
     Style = csDropDownList
-    ItemHeight = 13
     TabOrder = 4
     OnExit = FuncValueExit
     Items.Strings = (

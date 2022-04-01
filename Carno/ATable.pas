@@ -60,10 +60,10 @@ implementation
                         d_t := Term.Create (p[i], p[j]);
                         Call_method.Add (p, d_t);
                     end;
-                    inc (j, i+1);
+                    inc (j);
                 end;
                 inc (i);
-                j := 0; 
+                j := i + 1;
             end;
 
             p := Call_method.Delete_dups(p);

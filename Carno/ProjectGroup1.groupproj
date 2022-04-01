@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6001ECE3-FBF4-4378-A1D3-9BD983E077EA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Carno_Page.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="D:\OAIP\LAB 1\LAB1FINAL.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Carno_Page">
+        <MSBuild Projects="Carno_Page.dproj"/>
+    </Target>
+    <Target Name="Carno_Page:Clean">
+        <MSBuild Projects="Carno_Page.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Carno_Page:Make">
+        <MSBuild Projects="Carno_Page.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LAB1FINAL">
+        <MSBuild Projects="D:\OAIP\LAB 1\LAB1FINAL.dproj"/>
+    </Target>
+    <Target Name="LAB1FINAL:Clean">
+        <MSBuild Projects="D:\OAIP\LAB 1\LAB1FINAL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LAB1FINAL:Make">
+        <MSBuild Projects="D:\OAIP\LAB 1\LAB1FINAL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Carno_Page;LAB1FINAL"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Carno_Page:Clean;LAB1FINAL:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Carno_Page:Make;LAB1FINAL:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

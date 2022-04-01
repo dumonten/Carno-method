@@ -45,7 +45,6 @@ implementation
         begin
             SetLength (arr_bit, nBits);
             SetLength (arr_gap, nBits);
-            // Don't forget to paste here value of arr_gap
             bitCount := 0;
             perf_monomial := bit;
             for i := low (arr_bit) to high(arr_bit) do begin
@@ -211,17 +210,14 @@ implementation
 
    function Term.Overlay (const n : word) : boolean;
         var
-            m, k, res: word;
+            m, res: word;
             i: Integer;
         begin
             m := 0;
             for i := 0 to Length(arr_gap) - 1 do begin
-                if (arr_gap[i]) then k := 0
-                    else k := 1;
-                m := m or k shl i;
+                if (not arr_gap[i]) then m := 1 shl i + m;
             end;
             result := (m and n) = (m and perf_monomial);
-            k := 0;
         end;
 
 
